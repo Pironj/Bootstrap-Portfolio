@@ -1,0 +1,157 @@
+
+html {
+    position: relative;
+}
+
+body {
+    background-image: url("../images/cork-wallet.png");
+    margin-bottom: 70px;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    padding: 0;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 2px;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: #ffffff;
+    height: 100%;
+    overflow: auto;
+}
+
+.navbar-text {
+    background-color: #4aaaa5;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    height: 100%;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.nav-link {
+    color: #777777;
+}
+
+.nav-link:hover {
+    background-color: #4aaaa5;
+    color: white;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+}
+
+.link-break {
+    display: block;
+    padding: .5rem .25rem;
+    color: #777777;
+}
+/* restyling bootstrap footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 8px;
+    font-size: 10px;
+    color: #cccccc;
+}
+h2 {
+    margin: 0;
+    font-size: 10px;
+    padding-top: 30px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: normal;
+}
+/* change background color of nested text container */
+.footer-text {
+    background-color: #666666;
+    padding-top: 20px;
+}
+
+.card {
+    border: none;
+    padding-bottom: 15px;
+}
+.card-body {
+    padding-left: 0;
+}
+
+/* restyling of card body to resemble basic portfolio */
+.card-header {
+    background-color: #ffffff;
+    color: #4aaaa5;
+    border-bottom-width: 2px;
+    border-bottom-color: #cccccc;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 32px;
+    padding-left: 0;
+    font-weight: bold;
+}
+.card-text {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+/* headshot img padding */
+.rounded {
+    margin-right: 15px;
+}
+
+/* Portfolio grid */
+.col {
+    flex-grow: .2;
+    padding: 15px;
+}
+
+/* center text over images */
+.image-box {
+    position: relative;
+    width: 200px;
+}
+.center {
+    position: absolute;
+    text-align: center;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    width: 100%;
+    background-color: #4aaaa5;
+    color: white;
+    top: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img-link-style:hover {
+    opacity: 0.5;
+}
+
+/* Contact style Bootstrap edits */
+/* font */
+label {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* navbar 992px + width viewport adjust container alignment */
+@media (min-width: 992px) {
+    .navbar-expand-lg>.container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
