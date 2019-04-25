@@ -9,7 +9,7 @@ body {
 }
 .scrollspy-example {
     overflow: auto;
-    height: 400px;
+    height: 500px;
 }
 /* restyling bootstrap nav bar div parents below */
 .navbar {
@@ -174,3 +174,12 @@ label {
         padding-left: 0;
     }
 }
+@media (min-width: 1200px) {
+    #content, .col-4 {
+        height: 500px;
+    }
+    .col-8 {
+        height: 500px;
+    }
+}
+
