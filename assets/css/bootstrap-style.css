@@ -211,18 +211,12 @@ label {
     color: white;
     transform: rotateY(180deg);
 }
-/* .links {
-    margin-top: 5px;
-} */
+
 .fas, .fab {
     padding: 10px;
     color: #292929;
     font-size: 20px;
 }
-/* #deploy-link {
-    padding: 0;
-    margin-top: 0;
-} */
 
 .techDes {
     margin-bottom: 0;
