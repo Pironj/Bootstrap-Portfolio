@@ -20,21 +20,38 @@ body {
     border-bottom-width: 2px;
     margin-bottom: 30px;
 }
-
+#nav-img {
+ border-radius: .25rem;
+}
 .container {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* height: 100%;
     overflow: auto; */
 }
-.col-4 {
+#about, #portfolio, #contact {
+    padding-left: 3%;
+    padding-right: 3%;
+    /* background-color: #ffffff; */
+}
+.col-sm-4 {
     background-image: url("../images/portfolio-image.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: auto;
 }
 .list-group-item  {
     background-color: transparent;
+    border-color: none;
+    width: 40%;
+    height: 6%;
+    border-style: none;
 }
 .list-group-item.active {
+    background-color: transparent;
+    border-color: none;
+    width: 40%;
+}
+.list-group-item-action:hover {
     background-color: transparent;
 }
 .navbar-text {
@@ -120,7 +137,7 @@ h2 {
 .card-text {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-
+    
 }
 /* headshot img padding */
 .rounded {
@@ -154,6 +171,15 @@ h2 {
     opacity: 0.5;
 }
 
+.projImg {
+    height: 216px;
+    width: 215px;
+    border-radius: .25rem;
+}
+#tweet {
+    height: 140px;
+    width: 215px;
+}
 /* contact images */
 .mr-3 {
     height: 64px;
@@ -169,8 +195,8 @@ label {
 
 .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     backface-visibility: hidden;
@@ -197,6 +223,10 @@ label {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4aaaa5;
+    border-radius: .25rem;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -220,6 +250,8 @@ label {
 
 .techDes {
     margin-bottom: 0;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .techImg {
@@ -231,6 +263,23 @@ label {
     font-size: 12px;
 }
 /* navbar 992px + width viewport adjust container alignment */
+@media (max-width: 576px) {
+    .rounded {
+        margin-left: 30%;
+    }
+    #firstP {
+        display: inline-flex;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    #secondP {
+        margin-left: 5%;
+    }
+    .image-box {
+        margin-left: 6%;
+    }
+}
 @media (min-width: 992px) {
     .navbar-expand-lg>.container {
         padding-right: 0;

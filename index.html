@@ -25,9 +25,9 @@
         </div>
     </nav>
 
-<div class="container" id="content">
+<div class="container">
     <div class="row">
-        <div class="col-4">
+        <div class="col-sm-4" id="nav-img">
             <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#about">About</a>
                 <a class="list-group-item list-group-item-action" href="#portfolio">Portfolio</a>
@@ -36,32 +36,37 @@
         </div>
         <div class="col-8">
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-                <div class="container" id="about">
-                    <div class="card">
+                <div class="container">
+                    <div class="card" id="about">
                         <div class="card-header">
                             About
                         </div>
                         <div class="card-body">
-                            <img src="assets/images/headshot.jpg" class="rounded float-left" alt="Responsive image" wdith="150"
-                            height="150" />
-                            <p class="card-text">Web Developer and former Director of Operations with three years of experience
-                                managing multiple teams. I have built a career moving up with my company meeting and beating budget
-                                on P&L. I have decided to take a step back to pursue my dreams of building something truly amazing.
-                                Holds a Full-Stack Web Development Certification from University of Washington Coding Bootcamp to
-                                reinvent myself and bring my creative passion to life through designing web application with JSON. I
-                                am proficient with JavaScript, CSS, html & JQuery, Firebase, Node.js, React with attention to
-                                object-oriented notation and responsive design. Collaborating and communicating with colleagues is a
-                                strength I’ve gained with my experience in my former role and wish to push the envelope in a new
-                                role.</p>
-                                <p class="card-text">I am newly and happily married, and very excited to be starting this next chapter
-                                    in my life. My wife
-                                    and I have a goal to move to Hawaii while we are still young. I am animal lover and care for two fur
-                                    babies currently, but soon to be more in the future.</p>
-                                </div>
+                            <span>
+                                <img src="assets/images/headshot.jpg" class="rounded float-left" alt="Responsive image" wdith="150"
+                                height="150" />
+                                <p class="card-text" id="firstP">Web Developer and former Director of Operations with three years of experience
+                                    managing multiple teams. I have built a career moving up with my company meeting and beating budget
+                                    on P&L. I have decided to take a step back to pursue my dreams of building something truly amazing.
+                                    Holds a Full-Stack Web Development Certification from University of Washington Coding Bootcamp to
+                                    reinvent myself and bring my creative passion to life through designing web application with JSON. I
+                                    am proficient with JavaScript, CSS, html & JQuery, Firebase, Node.js, React with attention to
+                                    object-oriented notation and responsive design. Collaborating and communicating with colleagues is a
+                                    strength I’ve gained with my experience in my former role and wish to push the envelope in a new
+                                    role.
+                                </p>
+
+                            </span>
+                            <p class="card-text" id="secondP">I am newly and happily married, and very excited to be starting this next chapter
+                                in my life. My wife
+                                and I have a goal to move to Hawaii while we are still young. I am animal lover and care for two fur
+                                babies currently, but soon to be more in the future.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="container" id="portfolio">
-                    <div class="card">
+                <div class="container">
+                    <div class="card" id="portfolio">
                         <div class="card-header">
                             Portfolio
                         </div>
@@ -71,7 +76,7 @@
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
                                             <!-- <a class="img-link-style" href="https://pironj.github.io/Word-Guess-Game/" target="_blank"> -->
-                                                <img src="assets/images/hangman.PNG" width="200px" height="200px" />
+                                                <img class="projImg" src="assets/images/hangman.PNG" width="200px" height="200px" />
                                                 <div class="center">Hangman</div>
                                             <!-- </a> -->
 
@@ -79,7 +84,7 @@
                                         <div class="flip-card-back">
                                             <p class="techDes">A word guess game for checking validation of entry by user</p>
                                             <p class="techDes"><strong>Technologies:</strong></p>
-                                            <img class="techImg" src="assets/images/html-js-css-icon-png.png" width="200px" height="50" />
+                                            <img class="techImg" src="assets/images/html-js-css-icon-png.png" width="195px" height="50" />
                                             <div class="links">
                                                 <span>
                                                     <a class="img-link-style" href="https://pironj.github.io/Word-Guess-Game/" target="_blank"><i class="fas fa-link"></i></a>
@@ -95,13 +100,13 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/crystal.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/crystal.PNG" width="200px" height="200px" />
                                             <div class="center">Crystal Collector Game</div>
                                         </div>
                                         <div class="flip-card-back">
                                             <p class="techDes">An interactive click-event game that updates user score dynamically</p>
                                             <p class="techDes"><strong>Technologies:</strong></p>
-                                            <img class="techImg" src="assets/images/html-js-css-icon-png.png" width="200px" height="50" />
+                                            <img class="techImg" src="assets/images/html-js-css-icon-png.png" width="195px" height="50" />
                                             <div class="links">
                                                 <span>
                                                     <a class="img-link-style" href="https://pironj.github.io/unit-4-game/" target="_blank"><i class="fas fa-link"></i></a>
@@ -118,11 +123,11 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/doug.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/doug.PNG" width="200px" height="200px" />
                                             <div class="center">Trivia Game</div>
                                         </div>
                                         <div class="flip-card-back">
-                                            <p class="techDes">Trivia game that keeps track of user input and displays results upon completion</p>
+                                            <p class="techDes" id="smDes" >Trivia game that keeps track of user input and displays results upon completion</p>
                                             <p class="techDes"><strong>Technologies:</strong></p>
                                             <span>
                                                 <img class="techImg" src="assets/images/html-js-css-icon-png.png" width="130px" height="40" />
@@ -142,7 +147,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/giphy.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/giphy.PNG" width="200px" height="200px" />
                                             <div class="center">Giphy API Search</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -168,7 +173,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/train.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/train.PNG" width="200px" height="200px" />
                                             <div class="center">Train Scheduler</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -192,12 +197,12 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/eventHunter.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/eventHunter.PNG" width="200px" height="200px" />
                                             <div class="center">Event Hunter</div>
                                         </div>
                                         <div class="flip-card-back">
                                             <p class="techDes" id="smDes">Search for upcoming events. Buy tickets and listen to samples of your artists</p>
-                                            <p class="techDes"><strong>Technologies: </strong>TicketMaster API, Itunes API</p>
+                                            <p class="techDes" id="smDes"><strong>Technologies: </strong>TicketMaster API, Itunes API</p>
                                             <span>
                                                 <img class="techImg" src="assets/images/html-js-css-icon-png.png" width="130px" height="40" />
                                                 <img class="techImg" src="assets/images/ajax-icon-9.jpg" width="40px" height="40" />
@@ -218,7 +223,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/LIRI.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/LIRI.PNG" width="200px" height="200px" />
                                             <div class="center">Liri Bot</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -242,7 +247,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/bamazon.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/bamazon.PNG" width="200px" height="200px" />
                                             <div class="center">Bamazon Node App</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -269,7 +274,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/friendfinder.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/friendfinder.PNG" width="200px" height="200px" />
                                             <div class="center">Friend Finder</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -294,7 +299,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/beefsquatch.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/beefsquatch.PNG" width="200px" height="200px" />
                                             <div class="center">Eat-Da-Burger</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -321,7 +326,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/beefsquatch.PNG" width="200px" height="200px" />
+                                            <img class="projImg" src="assets/images/beefsquatch.PNG" width="220px" height="220px" />
                                             <div class="center">Eat-Da-Burger</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -346,7 +351,7 @@
                                 <div class="image-box flip-card">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                            <img src="assets/images/tweetStache.png" width="200px" height="100px" />
+                                            <img class="projImg" id="tweet" src="assets/images/tweetStache.png" width="200px" height="100px" />
                                             <div class="center">TweetStache</div>
                                         </div>
                                         <div class="flip-card-back">
@@ -370,44 +375,46 @@
                         </div>
                     </div>
                 </div>    
-                <div class="container" id="contact">
-                    <div class="card">
+                <div class="container">
+                    <div class="card" id="contact">
                         <div class="card-header">
                             Contact
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-
-                            <div class="media"><a href="mailto:pironj27@gmail.com" target="_blank">
-                                <img src="assets/images/Gmail-icon.png" class="mr-3" alt="gmail-icon">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Email Me</h5>
+                        <div class="row">
+                            <div class="col">
+                                
+                                <div class="media">
+                                    <a href="mailto:pironj27@gmail.com" target="_blank">
+                                        <img src="assets/images/Gmail-icon.png" class="mr-3" alt="gmail-icon">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Email Me</h5>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="col">
+                                
+                                <div class="media">
+                                    <a href="https://www.linkedin.com/in/julian-piron-89a183169/" target="_blank">
+                                        <img src="assets/images/linkedin-icon.png" class="mr-3" alt="linkedin-icon">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Linkedin Profile</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                            
+                                <div class="media">
+                                    <a href="https://github.com/Pironj" target="_blank">
+                                        <img src="assets/images/github-icon.png" class="mr-3" alt="github-icon">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Github Profile</h5>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col">
-
-                            <div class="media"><a href="https://www.linkedin.com/in/julian-piron-89a183169/" target="_blank">
-                                <img src="assets/images/linkedin-icon.png" class="mr-3" alt="linkedin-icon">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Linkedin Profile</h5>
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="col">
-
-                            <div class="media"><a href="https://github.com/Pironj" target="_blank">
-                                <img src="assets/images/github-icon.png" class="mr-3" alt="github-icon">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Github Profile</h5>
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                
                     </div>
                 </div>
             </div>
