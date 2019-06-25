@@ -265,7 +265,6 @@ label {
     font-size: 12px;
 }
 /* navbar 992px + width viewport adjust container alignment */
-
 @media (max-width: 576px) {
     .rounded {
         margin-left: 30%;
@@ -284,11 +283,11 @@ label {
     }
     .col-sm-4 {
         max-width: 50%;
-        flex: 0 0 50%;
+        flex: 0 0 30%;
     }
     .col-sm-8 {
-        max-width: 50%;
-        flex: 0 0 50%;
+        /* max-width: 50%; */
+        flex: 0 0 70%;
         padding-right: 0;
     }
 }
