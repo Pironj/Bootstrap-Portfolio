@@ -10,15 +10,15 @@ body {
     overflow: auto;
     height: 500px;
     padding: 15px;
-    max-width: 560px;
+    max-width: 570px;
 }
 /* restyling bootstrap nav bar div parents below */
 .navbar {
-    background-color: #ffffff;
+    background-color: #666666; 
     padding: 0;
     border-bottom-style: solid;
-    border-bottom-color: #cccccc;
-    border-bottom-width: 2px;
+    border-bottom-color: #4aaaa5;
+    border-bottom-width: 4px;
     margin-bottom: 30px;
 }
 #nav-img {
@@ -124,7 +124,7 @@ footer {
     text-align: center;
     border-top-style: solid;
     border-top-color: #4aaaa5;
-    border-top-width: 8px;
+    border-top-width: 6px;
     font-size: 10px;
     color: #cccccc;
 }
@@ -138,7 +138,8 @@ h2 {
 /* change background color of nested text container */
 .footer-text {
     background-color: #666666;
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 5px;
 }
 
 .card {
