@@ -1,15 +1,16 @@
-
 html {
     position: relative;
 }
 
 body {
     background-image: url("../images/cork-wallet.png");
-    margin-bottom: 70px;
+    margin-bottom: 10%;
 }
 .scrollspy-example {
     overflow: auto;
     height: 500px;
+    padding: 15px;
+    max-width: 560px;
 }
 /* restyling bootstrap nav bar div parents below */
 .navbar {
@@ -21,26 +22,37 @@ body {
     margin-bottom: 30px;
 }
 #nav-img {
- border-radius: .25rem;
-}
-.container {
-    padding-right: 0;
-    /* background-color: #ffffff; */
-    /* height: 100%;
-    overflow: auto; */
-}
-#about, #portfolio, #contact {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-bottom: 13%;
-    /* background-color: #ffffff; */
-}
-.col-sm-4 {
     background-image: url("../images/portfolio-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    height: -webkit-fill-available;
+    max-height: 400px;
+    max-width: 302px;
+    margin-right: 0;
+    margin-left: auto;
+    border-style: outset;
+    border-image-width: 1px;
+    border-color: #4aaaa5;
+    border-radius: .25rem;
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.7);
+   }
+.col-sm-4 {
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
+#about, #portfolio, #contact {
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-bottom: 13%;
+    border-style: outset;
+    border-image-width: 1px;
+    border-color: #4aaaa5;
+    border-radius: .25rem;
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.7);
+    /* background-color: #ffffff; */
+}
+
 .list-group-item  {
     background-color: transparent;
     border-color: none;
@@ -52,9 +64,16 @@ body {
     background-color: transparent;
     border-color: none;
     width: 40%;
+    color: #4aaaa5;
 }
-.list-group-item-action:hover {
-    background-color: transparent;
+.list-group-item-action {
+    color: #cccccc;
+    font-weight: bold;
+    text-shadow:
+		-1px -1px 0 rgb(34, 34, 34),
+		1px -1px 0 rgb(34, 34, 34),
+		-1px 1px 0 rgb(34, 34, 34),
+		1px 1px 0 rgb(34, 34, 34);
 }
 .navbar-text {
     background-color: #4aaaa5;
@@ -68,6 +87,11 @@ body {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 0;
+    text-shadow:
+		-1px -1px 0 rgb(34, 34, 34),
+		1px -1px 0 rgb(34, 34, 34),
+		-1px 1px 0 rgb(34, 34, 34),
+		1px 1px 0 rgb(34, 34, 34);
 }
 
 .nav-item {
@@ -135,16 +159,25 @@ h2 {
     font-size: 32px;
     padding-left: 0;
     font-weight: bold;
+    text-shadow:
+		-1px -1px 0 rgb(34, 34, 34),
+		1px -1px 0 rgb(34, 34, 34),
+		-1px 1px 0 rgb(34, 34, 34),
+		1px 1px 0 rgb(34, 34, 34);
 }
 .card-text {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    
+
 }
 /* headshot img padding */
 .rounded {
+    border-style: outset;
+    border-image-width: 1px;
+    border-color: azure;
     margin-right: 15px;
-}
+    box-shadow: 0px 3px 9px 4px rgba(0,0,0,0.7);
+}    
 
 /* Portfolio grid */
 .col {
@@ -172,7 +205,6 @@ h2 {
 .img-link-style:hover {
     opacity: 0.5;
 }
-
 .projImg {
     height: 216px;
     width: 215px;
@@ -212,6 +244,8 @@ label {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    box-shadow: 0 7px 12px 5px rgba(0,0,0,0.7);
+    border-radius: .25rem;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -243,13 +277,11 @@ label {
     color: white;
     transform: rotateY(180deg);
 }
-
 .fas, .fab {
     padding: 10px;
     color: #292929;
     font-size: 20px;
 }
-
 .techDes {
     margin-bottom: 0;
     padding-left: 2%;
@@ -265,87 +297,85 @@ label {
     font-size: 12px;
 }
 /* navbar 992px + width viewport adjust container alignment */
-@media (max-width: 335px) {
-    .col-sm-4 {
-        max-width: 10%;
-        flex: 0 0 7%;
-        height: 18%;
-        margin-top: 30%;
-    }
+@media (max-width: 343px) {
     .col-sm-8 {
-
-    }
-}
-@media (max-width: 576px) {
-    .rounded {
-        margin-left: 30%;
-    }
-    #firstP {
-        display: inline-flex;
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-    }
-    #secondP {
-        margin-left: 5%;
-    }
-    .image-box {
-        margin-left: 6%;
-    }
-    .col-sm-4 {
-        max-width: 50%;
-        flex: 0 0 30%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .col-sm-8 {
-        /* max-width: 50%; */
-        flex: 0 0 70%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .info {
-        padding-left: 0;
-    }
-}
-@media (min-width: 577px) {
-    .col-sm-4 {
-        /* max-width: 39%; */
-        flex: 0 0 40%;
-        max-width: 40%;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .col-sm-8 {
-        /* max-width: 62%; */
-        flex: 0 0 60%;
-        max-width: 60%;
+    .col-sm-4 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
-@media (min-width: 767px) {
-    .col-sm-4 {
-        flex: 25%;
+
+@media (max-width: 460px) {
+    .rounded {
+        margin-left: 32%;
+        margin-right: 60%;
+        margin-bottom: 5%;
     }
+
+}
+@media (max-width: 576px) {
+    #nav-img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+    .col-sm-4 {
+        height: max-content;
+        margin-bottom: 3%;
+    }
+}
+@media (min-width: 576px) {
+    #content {
+        max-width: 100%;
+    }
+    .col-sm-4 {
+        padding: 15px;
+        flex: 43%;
+        max-width: 43%;;
+    }
+    #nav-img {
+        height: cover;
+    }
+    .col-sm-8 {
+        padding-left: 4px;
+        padding-right: 8px;
+        flex: 57%;
+        max-width: 57%;
+    }
+    .info {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 767px) {
+    #content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* .col-sm-4 {
+        height: fit-content;
+    } */
 }
 @media (min-width: 992px) {
     .navbar-expand-lg>.container {
         padding-right: 0;
         padding-left: 0;
     }
-    .col-sm-4 {
-        max-width: 45%;
+    .content {
+        max-height: 600px;
     }
 }
 @media (min-width: 1200px) {
-    .col-sm-4 {
-        height: 500px;
+    .content {
+        max-height: 600px;
     }
-    .col-sm-8 {
-        height: 500px;
-        max-width: 66.66%;
+    .col-4 {
+        height: 600px;
     }
-    .col-sm-4 {
-        max-width: 33.33%;
+    .col-8 {
+        height: 600px;
     }
 }
-
