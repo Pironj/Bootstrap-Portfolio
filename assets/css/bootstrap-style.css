@@ -4,7 +4,7 @@ html {
 
 body {
     background-image: url("../images/cork-wallet.png");
-    margin-bottom: 10%;
+    margin-bottom: 10px;
 }
 .scrollspy-example {
     overflow: auto;
@@ -36,11 +36,11 @@ body {
     border-radius: .25rem;
     box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.7);
    }
-.col-sm-4 {
-    margin-top: auto;
-    margin-bottom: auto;
+/* .col-sm-4 {
+    padding-top: auto;
+    padding-bottom: auto;
 
-}
+} */
 #about, #portfolio, #contact {
     padding-left: 5%;
     padding-right: 3%;
@@ -323,6 +323,10 @@ label {
         margin-right: auto;
         height: 100%;
     }
+    .scrollspy-example {
+        margin-left: auto;
+        margin-right: auto; 
+    }
     .col-sm-4 {
         height: max-content;
         margin-bottom: 3%;
@@ -354,7 +358,7 @@ label {
 @media (max-width: 767px) {
     #content {
         margin-left: 0;
-        margin-right: 0;
+        margin-right: auto;
     }
     /* .col-sm-4 {
         height: fit-content;
@@ -368,10 +372,31 @@ label {
     .content {
         max-height: 600px;
     }
+    #nav-img {
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 450px;
+        max-width: 339px;
+
+    }
 }
 @media (min-width: 1200px) {
     .content {
         max-height: 600px;
+        margin-right: auto;
+    }
+    .scrollspy-example {
+        height: 600px;
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: 0px;
+    }
+    #nav-img {
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 500px;
+        max-width: 378px;
+
     }
     .col-4 {
         height: 600px;
